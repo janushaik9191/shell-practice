@@ -2,4 +2,4 @@
 
 DATE=$(date +%D)
 
-echo "today date is :: $DATE"
+echo "today date is :: $date"
