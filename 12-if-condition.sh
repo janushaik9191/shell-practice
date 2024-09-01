@@ -4,6 +4,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-dnf install nginx -y
+    dnf install nginx -y
 else
-exit 1
+    exit 1
+fi
