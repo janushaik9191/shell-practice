@@ -19,12 +19,13 @@ Y="\e[33m"
         exit 1
     fi
 
-if [ $# -eq 0 ]
-then
-    echo "user have to give the inputs "
-fi
 
 for package in $@ # $@ refers to all arguments passed to it
+        if [ $# -eq 0 ]
+        then
+            echo "user have to give the inputs "
+        fi
+
 do
     dnf list installed $package &>>$LOG_FILE
     if [ $? -ne 0 ]
