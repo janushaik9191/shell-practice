@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-fi [ $USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
     echo "plese run the script with root access"
 fi
