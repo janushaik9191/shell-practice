@@ -11,7 +11,7 @@ fi
     then
         echo "nginx is not installed going to install it..."
         dnf install nginx -y
-        if [ $? -eq 0 ]
+        if [ $? -ne 0 ]
         then
             echo "nginx is failed to insatll"
         else
