@@ -4,7 +4,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    dnf install nginx -y
+        echo "plese run the script with root accces"
 else
     exit 1
 fi
