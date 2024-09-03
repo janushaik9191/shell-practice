@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/home/ec2-user/shell-practice
+SOURCE_DIR=/home/ec2-user/shell-script
 
 if [ -d SOURCE_DIR ]
 then
