@@ -12,3 +12,4 @@ fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +1)
     echo "source dir files are : $FILES"
+    rm -rf $FILES
