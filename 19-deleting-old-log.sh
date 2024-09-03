@@ -4,16 +4,8 @@ SOURCE_DIR=/var/log/shell-script
 
 if [ -d $SOURCE_DIR ]
 then
-    echo " SOURCE_DIR is exists "
+    echo "SOURCE_DIR is exists"
 else
-    echo " SOURCE_DIR is not exists "
+    echo "SOURCE_DIR is not exists"
     exit 1
 fi
-
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +2)
-    echo " files:$FILES "
-#     while IFS= read -r file 
-#     do
-#         echo "Deleting file: $file"
-#         rm -rf $file
-#     done <<< $FILES
