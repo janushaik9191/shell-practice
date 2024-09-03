@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/var/log/shell-scr
+SOURCE_DIR=/var/log/shell-script
 
 if [ -d $SOURCE_DIR ]
 then
@@ -9,3 +9,7 @@ else
     echo "SOURCE_DIR is not exists"
     exit 1
 fi
+
+FILES=$(echo ${SOURCE_DIR} -name "*.log" -mtime+1)
+    echo "files :: $FILES"
+    
