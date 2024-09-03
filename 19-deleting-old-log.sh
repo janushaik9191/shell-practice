@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/var/log/shell
+SOURCE_DIR=/var/log/shell-script
 
 if [ -d $SOURCE_DIR ]
 then
