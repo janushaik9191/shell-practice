@@ -11,5 +11,6 @@ else
 fi
     FILES=$(find $SOURCE_DIR -name "*.log" -mtime +1)
         echo "the 1 day older sorted files are : $FILES"
-        echo "deleting the 1 day older files"
         rm -rf $FILES
+        echo "deleting the 1 day older files"
+      
