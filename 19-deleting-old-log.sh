@@ -11,5 +11,4 @@ else
 fi
 
 FILES=$(echo ${SOURCE_DIR} -name "*.log" -mtime+1)
-    echo "files :: $FILES"
-    
+    echo "files : $FILES"
