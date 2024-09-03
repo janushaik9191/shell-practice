@@ -10,8 +10,8 @@ else
     exit 1
 fi
 
-# FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +1)
-#     echo " files:$FILES "
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +2)
+    echo " files:$FILES "
 #     while IFS= read -r file 
 #     do
 #         echo "Deleting file: $file"
