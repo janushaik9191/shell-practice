@@ -10,6 +10,7 @@ else
     exit 1
 fi
     FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
+    FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
         echo "the 14 days older sorted files are : $FILES"
         echo "deleting the 14 days older files"
         rm -rm $FILES
