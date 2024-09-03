@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/home/ec2-user/shell-script
+SOURCE_DIR=/var/log/shell-script
 
 if [ -d SOURCE_DIR ]
 then
