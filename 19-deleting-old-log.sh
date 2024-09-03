@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SOURCE_DIR="/var/log/shell-script"
+SOURCE_DIR=/var/log/shell-script
 
-if [ -d SOURCE_DIR ]
+if [ -d $SOURCE_DIR ]
 then
     echo "SOURCE_DIR is exists"
 else
