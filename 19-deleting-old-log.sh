@@ -10,5 +10,5 @@ else
     exit 1
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +1)
-    echo "files : $FILES"
+FILES=$(find $SOURCE_DIR -name ".*log" -mtime +1)
+    echo "source dir files are :$FILES"
