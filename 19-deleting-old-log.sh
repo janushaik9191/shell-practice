@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/var/log/shell-script
+SOURCE_DIR=/var/log/shell
 
 if [ -d $SOURCE_DIR ]
 then
@@ -10,5 +10,10 @@ else
     exit 1
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +1)
-    echo " files: $FILES "
+# FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +1)
+#     echo " files:$FILES "
+#     while IFS= read -r file 
+#     do
+#         echo "Deleting file: $file"
+#         rm -rf $file
+#     done <<< $FILES
