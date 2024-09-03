@@ -9,5 +9,5 @@ set -e  #setting the automatic exit, if we get error, set -ex for debug
 # trap 'failure "${LINENO}" "$BASH_COMMAND"' ERR # ERR is the error signal
 
 echo "Hello World success"
-echo "Hello World after failure"
 echooooo "Hello Wolrd failure"
+echo "Hello World after failure"
